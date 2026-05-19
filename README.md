@@ -1,8 +1,8 @@
 # Fraud_Detections
-Built Cloud- native banking fraud risk Engine using Big Query machine langauage 
+Built Cloud-native banking fraud risk Engine using Big Query machine langauage 
 
 Hands-On Cloud Analytics: Decomposing Financial Fraud Vectors with BigQuery ML
-🚀 What I Built (Hands-On)
+ What I Built (Hands-On)
 I engineered and deployed a live, cloud-native risk engine inside Google Cloud Platform (GCP) using BigQuery ML and SQL. Instead of traditional, slow workflows that require pulling millions of sensitive financial rows out into external Python environments, I kept the entire data engineering and machine learning lifecycle directly within the secure cloud data warehouse.
 
 Using a real-world dataset of credit card transactions, I trained a Logistic Regression binary classification model to analyze transaction amounts, timestamps, and anonymized behavioral vectors. The system evaluates these inputs in real time to instantly calculate a fraud probability score and determine whether a transaction should be flagged (Class = 1) or cleared (Class = 0).
