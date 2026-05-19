@@ -87,24 +87,6 @@ In a production banking environment, this sub-second database calculation instan
 
 
 
-live
-
-SELECT 
-  predicted_Class, 
-  predicted_Class_probs[OFFSET(1)].prob AS fraud_probability_score, 
-  Amount, 
-  Time 
-FROM 
-  ML.PREDICT(MODEL financial_risk_ops.banking_fraud_model, ( 
-    SELECT 
-      CAST(8500.00 AS NUMERIC) AS Amount, -- Simulated high-value anomaly 
-      CAST(45000 AS INT64) AS Time,
-      CAST(-1.35 AS FLOAT64) AS V1,       -- Anonymized behavioral vectors 
-      CAST(2.41 AS FLOAT64) AS V2, 
-      CAST(-3.11 AS FLOAT64) AS V3, 
-      CAST(0.85 AS FLOAT64) AS V4, 
-      CAST(-1.12 AS FLOAT64) AS V5 
-  ));
 
 
 
