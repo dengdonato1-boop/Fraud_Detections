@@ -17,9 +17,14 @@ The Imbalanced Data Trap: Financial fraud is incredibly rare. My first training 
 📈 Core Portfolio Competencies
 Cloud Security Architecture: Processing data entirely inside the data warehouse to drastically reduce data exposure risks by eliminating unnecessary network movement.
 
-Behavioral Baseline Analytics: Mapping foundational data science concepts directly to User and Entity Behavior Analytics (UEBA)—the core logic driving modern enterprise SIEMs and automated alert desks.
+Behavioral Baseline Analytics: Mapping foundational data science concepts directly to User and Entity Behavior Analytics (UEBA) the core logic driving modern enterprise SIEMs and automated alert desks.
 
 Production Inference Controls: Structuring live queries designed to deliver real-time risk outputs capable of triggering automated card freezes.
+
+
+
+
+
 
 💻 The Production SQL Scripts
 1. Engineering the Fraud Classifier
@@ -73,3 +78,8 @@ Prediction: Class = 1 (Confirmed Fraud Flag)
 Risk Score: ~34.8% anomaly probability
 
 In a production banking environment, this sub-second database calculation instantly feeds into automated security playbooks to temporarily freeze the user's account and trigger immediate out-of-band verification alerts.
+
+
+
+
+
