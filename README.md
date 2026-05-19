@@ -8,7 +8,7 @@ I engineered and deployed a live, cloud-native risk engine inside Google Cloud P
 Using a real-world dataset of credit card transactions, I trained a Logistic Regression binary classification model to analyze transaction amounts, timestamps, and anonymized behavioral vectors. The system evaluates these inputs in real time to instantly calculate a fraud probability score and determine whether a transaction should be flagged (Class = 1) or cleared (Class = 0).
 
 🛠️ Practical Challenges I Overcame
-A portfolio isn't just about showing code that works perfectly on the first try—it's about engineering solutions when things break. During this hands-on deployment, I solved two critical real-world pipeline issues:
+A portfolio isn't just about showing code that works perfectly on the first try it's about engineering solutions when things break. During this hands-on deployment, I solved two critical real-world pipeline issues:
 
 Environment Schema Alignment: My initial pipeline threw an environment error because the destination schema path didn't exist. I manually configured a dedicated data layer (financial_risk_ops) matching regional compliance standards (US multi-region) to allow the machine learning assets to compile properly.
 
